@@ -1,0 +1,247 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+#navbar {
+    display: flex;
+  
+    width: 100%;
+    height: 70px;
+    margin-top: 0px;
+    
+
+    /* background-color: black; */
+    /* opacity: 0.8; */
+
+
+
+}
+
+#navbar::before {
+
+   
+    
+   
+    content: "";
+    background-color: black;
+    position: absolute;
+    /* top: -9px;
+    left: -8px;
+    right: 0px; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+
+}#navbar::after{
+    background-image: url('shelf1.jpg');
+    /* border-bottom-right-radius: 370px; */
+    border-bottom-left-radius: 370px;
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -8px;
+    right: 0px;
+    width: 101%;
+    height: 376px;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul{
+    /* position: fixed; */
+}
+#navbar::before {
+
+    background-image: url('shelf1.jpg');
+    border-bottom-right-radius: 370px; 
+    border-bottom-left-radius: 370px;
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -8px;
+    right: 0px; 
+      width: 101%;
+     height: 376px; 
+    z-index: -1;
+    opacity: 0.1;
+
+ } 
+
+img {
+    height: 70px;
+    width: 70px;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 1px 20px;
+    color: white;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 1.4rem;
+    border-radius: 6px;
+   
+    
+
+}
+ul li a:hover {
+    background-color:rgb(168, 172, 168) ;
+}
+
+
+body {
+    background-color: rgb(168, 172, 168);
+}
+
+/* Section order */
+#order { 
+    background-color: rgb(95, 8, 8);
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-left: 0px;
+    margin-top: 315px;
+   
+    /* border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; */
+    
+}
+
+#ord1 img {
+    height: 342px;
+    width: 749px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 500px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    
+    
+}
+
+#ord1 {
+   position: relative;
+    animation-name: slide;
+    animation-iteration-count: 1;
+    animation-timing-function: 4s;
+    animation-direction: reverse;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        left: 0px;
+        
+    }
+
+    90% {
+        left: 500px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+#ord2 {font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Baloo Chettan 2', cursive;
+font-family: 'Nunito', sans-serif;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 606px;
+    height: 341px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+#ord2:hover {
+    background-color:rgb(168, 172, 168);
+}
+#joner{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.jonit{border: 3px solid rgb(95, 8, 8);
+    border-radius: 3px;
+    margin:8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    color: white;
+    font-family: 'Baloo Chettan 2', cursive;
+font-family: 'Nunito', sans-serif;
+    background-color: rgb(168, 172, 168);
+}
+.jonit:hover{
+    background-color: rgb(205, 208, 205);
+}
+.jonit img{
+   
+  height: 150px;
+  width: 150px;
+}
+.jonit img:hover{
+   opacity: 0.6;
+   transform: scale(1.1);
+    
+  }
+#jonerl{border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color:rgb(4 96 95);
+}
+#jonerl h1{
+    font-size: 2rem;
+     color: white;
+     font-family: 'Baloo Chettan 2', cursive;
+font-family: 'Nunito', sans-serif;
+     text-align: center;
+    
+}
+#jonerl h2{
+    font-size: 2rem;
+     color: white;
+   font-family: 'Baloo Chettan 2', cursive;
+font-family: 'Nunito', sans-serif;
+ margin-left: 220px;
+    
+}
+#joner2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+
+    /* button */
+    .btn{border: 2px solid brown;
+        font-size: 1rem;
+        font-family: 'Baloo Chettan 2', cursive;
+font-family: 'Nunito', sans-serif;
+        color: white;
+        border-radius: 3px;
+        background-color: rgb(221, 67, 67);
+    }
+    .btn:hover{cursor: pointer;
+        background-color:  rgb(95, 8, 8);
+    }
